@@ -7,169 +7,208 @@
     <meta name="description" content="راهنمای کامل مدیریت سرمایه و ثروت‌های کلان. آموزش استفاده از صندوق‌های سرمایه‌گذاری، بررسی فرصت‌های بازار ارزهای دیجیتال و معرفی صرافی‌های معتبر ایرانی برای معاملات ایمن.">
     <meta name="keywords" content="مدیریت سرمایه, سرمایه بزرگ, صندوق سرمایه گذاری, ارز دیجیتال, رمزارز, Nobitex, Wallex, Bitpin, Tabdeal, Axon, Firouzeh, ثروت آفرینی">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- استفاده از فونت اینتر به عنوان فونت پشتیبان و یک فونت فارسی خوانا -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+        
+        /* Base Styling */
         body {
             font-family: 'Vazirmatn', 'Inter', sans-serif;
-            background-color: #f7f9fb;
-            color: #1f2937; /* Dark Gray */
+            background-color: #f0f4f8; /* Light, calm blue-gray background */
+            color: #1a202c; /* Dark text */
             line-height: 1.8;
+            font-size: 1.05rem;
         }
         .container {
-            max-width: 1280px;
+            max-width: 1300px;
         }
-        /* سفارشی سازی برای لینک های مرجع جهت تاکید */
+        
+        /* Header Customization */
+        .main-header {
+             background: linear-gradient(135deg, #0b2245 0%, #1e3a8a 100%); /* Deep Navy/Indigo Gradient */
+             color: white;
+             padding: 40px;
+             border-radius: 20px 20px 0 0;
+             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Section Title Accent */
+        .section-title {
+            border-right: 6px solid #f97316; /* Orange accent */
+            padding-right: 15px;
+            font-size: 2rem;
+            font-weight: 800; /* Extra bold */
+            color: #1f2937;
+        }
+        
+        /* Referral Links (Cards and Buttons) */
         .referral-link {
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white border for cards */
         }
         .referral-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+            opacity: 0.95;
         }
-        /* استایل سفارشی برای بخش های مهم */
+        
+        /* Custom Colors for Exchange Cards */
+        .bg-green-500 { background-color: #059669; } /* Emerald */
+        .bg-purple-500 { background-color: #7c3aed; } /* Violet */
+        .bg-red-500 { background-color: #dc2626; } /* Red */
+        .bg-yellow-500 { background-color: #d97706; } /* Amber/Orange */
+        
+        /* Link Buttons Specific Styling */
+        .btn-large {
+             border-radius: 12px;
+             padding: 15px 30px;
+             font-size: 1.25rem;
+             font-weight: 700;
+             margin-top: 15px;
+        }
+        .btn-large .ml-2 {
+             font-weight: 900; /* Extra emphasis on the name */
+        }
+
+        /* Separator Styling - Enhanced */
         .section-separator {
-            border-top: 4px solid #3b82f6; /* Blue 500 */
-            width: 100px;
-            margin: 40px auto;
-            border-radius: 2px;
+            border-top: 5px solid #3b82f6; /* Blue 500 */
+            width: 150px;
+            margin: 60px auto;
+            border-radius: 3px;
+            opacity: 0.5;
         }
     </style>
 </head>
 <body class="p-4 md:p-8">
 
-    <div class="container mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-12 lg:p-16">
+    <div class="container mx-auto bg-white rounded-3xl shadow-2xl p-6 md:p-12 lg:p-16 border-t-8 border-indigo-700">
 
-        <!-- بخش عنوان اصلی و مقدمه -->
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-800 mb-4 leading-tight">
-                راهنمای جامع مدیریت سرمایه‌های بزرگ: <br class="hidden sm:inline"> استراتژی‌های ثروت‌آفرینی پایدار
+        <header class="text-center mb-16 main-header">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight tracking-wide">
+                راهنمای جامع مدیریت سرمایه‌های بزرگ: 
+                <br class="hidden sm:inline"> استراتژی‌های ثروت‌آفرینی پایدار ✨
             </h1>
-            <p class="text-xl md:text-2xl text-gray-600">
+            <p class="text-xl md:text-3xl text-indigo-300 font-light mt-4">
                 چگونه سرمایه‌های کلان خود را برای دستیابی به اهداف مالی بلندمدت هدایت کنید؟
             </p>
         </header>
 
-        <!-- مقدمه و فلسفه مدیریت سرمایه -->
-        <section class="mb-12 border-b pb-8 border-blue-100">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-r-4 border-blue-500 pr-3">
+        <section class="mb-20 border-b pb-10 border-gray-200">
+            <h2 class="section-title mb-8">
                 مقدمه‌ای بر جهان مدیریت ثروت کلان
             </h2>
-            <p class="text-gray-700 text-lg mb-4">
-                داشتن سرمایه بزرگ یک مزیت بزرگ، اما در عین حال مسئولیتی سنگین است. مدیریت موفق ثروت‌های کلان دیگر صرفاً در مورد "چگونه سود بیشتری کسب کنیم" نیست، بلکه بیشتر درباره **"چگونه اصل سرمایه را حفظ کرده و ریسک‌های سیستماتیک را مدیریت کنیم؟"** است. استراتژی‌های ما باید فراتر از بازارهای روزمره باشند و به افق‌های زمانی چندین ساله نگاه کنند. این راهنما به شما کمک می‌کند تا با اتخاذ رویکردی ساختاریافته، از پتانسیل کامل دارایی‌های خود استفاده کنید.
+            <p class="text-gray-700 text-lg mb-6">
+                داشتن سرمایه بزرگ یک مزیت بزرگ، اما در عین حال مسئولیتی سنگین است. مدیریت موفق ثروت‌های کلان دیگر صرفاً در مورد "چگونه سود بیشتری کسب کنیم" نیست، بلکه بیشتر درباره <b>"چگونه اصل سرمایه را حفظ کرده و ریسک‌های سیستماتیک را مدیریت کنیم؟"</b> است. استراتژی‌های ما باید فراتر از بازارهای روزمره باشند و به افق‌های زمانی چندین ساله نگاه کنند. این راهنما به شما کمک می‌کند تا با اتخاذ رویکردی ساختاریافته، از پتانسیل کامل دارایی‌های خود استفاده کنید.
             </p>
-            <div class="p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-                <p class="font-semibold text-yellow-800">
-                    نکته کلیدی: <span class="font-normal">اولویت اصلی در مدیریت سرمایه‌های کلان، **حفاظت از اصل دارایی** پیش از حداکثرسازی بازدهی است.</span>
+            <div class="p-5 bg-blue-50 rounded-xl border-4 border-blue-200 shadow-inner">
+                <p class="font-extrabold text-blue-800 text-lg">
+                    💡 نکته کلیدی: <span class="font-medium text-gray-700">اولویت اصلی در مدیریت سرمایه‌های کلان، <b>حفاظت از اصل دارایی</b> پیش از حداکثرسازی بازدهی است.</span>
                 </p>
             </div>
         </section>
 
-        <!-- اصول بنیادین مدیریت ثروت -->
         <div class="section-separator"></div>
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-r-4 border-blue-500 pr-3">
-                گام اول: ساختاردهی و تنوع‌بخشی هوشمندانه (Diversification)
+        <section class="mb-20">
+            <h2 class="section-title mb-8">
+                گام اول: ساختاردهی و تنوع‌بخشی هوشمندانه (Diversification) 🛡️
             </h2>
-            <p class="text-gray-700 text-lg mb-6">
+            <p class="text-gray-700 text-lg mb-8">
                 تنوع‌بخشی، مهم‌ترین ابزار شما برای کاهش ریسک در سبد سرمایه‌گذاری است. در سطح سرمایه‌های بزرگ، تنوع‌بخشی نباید تنها محدود به چند سهم یا صنعت باشد، بلکه باید در کلاس‌های دارایی مختلف (سهام، اوراق با درآمد ثابت، طلا، املاک، و دارایی‌های دیجیتال) توزیع شود.
             </p>
 
-            <h3 class="text-2xl font-semibold text-blue-700 mb-4 mt-8">
+            <h3 class="text-2xl font-bold text-blue-700 mb-5 mt-10">
                 ۱. استفاده از صندوق‌های سرمایه‌گذاری به عنوان ابزار حرفه‌ای
             </h3>
-            <p class="text-gray-700 mb-6">
+            <p class="text-gray-700 mb-8">
                 صندوق‌های سرمایه‌گذاری مشترک، ابزاری عالی برای افرادی هستند که نمی‌خواهند زمان زیادی را صرف تحلیل جزئیات بازار کنند. این صندوق‌ها نه تنها مدیریت حرفه‌ای را به ارمغان می‌آورند، بلکه به شما امکان می‌دهند با یک تراکنش، دارایی خود را در صدها سهم، اوراق قرضه، یا سایر دارایی‌ها توزیع کنید.
-                صندوق‌های با **درآمد ثابت** برای بخش حفظ سرمایه و صندوق‌های **سهامی** برای بخش رشد پورتفولیو حیاتی هستند.
+                صندوق‌های با <b>درآمد ثابت</b> برای بخش حفظ سرمایه و صندوق‌های <b>سهامی</b> برای بخش رشد پورتفولیو حیاتی هستند.
             </p>
-            <!-- لینک معرفی اپلیکیشن مالی (Firouzeh) -->
-            <a href="https://app.firouzeh.com/?referral_code=D9OKC" target="_blank" rel="nofollow noopener" class="referral-link inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
-                <span class="ml-2">معرفی اپلیکیشن فیروزه (Firouzeh)</span>: برای مدیریت سبد سهام، دسترسی به صندوق‌ها و خدمات کارگزاری هوشمند کلیک کنید.
-            </a>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="https://app.firouzeh.com/?referral_code=D9OKC" target="_blank" rel="nofollow noopener" class="referral-link btn-large block bg-blue-600 hover:bg-blue-700 text-white text-center">
+                    <span class="ml-2">معرفی اپلیکیشن فیروزه (Firouzeh)</span>
+                    <span class="block text-sm font-normal opacity-90 mt-1">مدیریت سبد سهام، صندوق‌ها و خدمات کارگزاری هوشمند</span>
+                </a>
 
-            <h3 class="text-2xl font-semibold text-blue-700 mb-4 mt-8">
+                <a href="https://axon.charisma.ir/l?mRef=10h6a3" target="_blank" rel="nofollow noopener" class="referral-link btn-large block bg-indigo-600 hover:bg-indigo-700 text-white text-center">
+                    <span class="ml-2">دسترسی به پلتفرم آکسون (Axon)</span>
+                    <span class="block text-sm font-normal opacity-90 mt-1">دریافت خدمات مشاوره مالی و راهکارهای سرمایه‌گذاری نوین</span>
+                </a>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-blue-700 mb-5 mt-12">
                 ۲. اهمیت مشاوره و پلتفرم‌های تخصصی
             </h3>
             <p class="text-gray-700 mb-6">
                 برای سرمایه‌های کلان، تصمیم‌گیری‌های مالی باید بر اساس داده‌ها و تحلیل‌های عمیق انجام شوند. استفاده از پلتفرم‌های مشاوره و مدیریت دارایی (Asset Management) که استراتژی‌های اختصاصی برای شما تعریف می‌کنند، ضروری است.
             </p>
-            <!-- لینک معرفی پلتفرم مالی (Axon) -->
-            <a href="https://axon.charisma.ir/l?mRef=10h6a3" target="_blank" rel="nofollow noopener" class="referral-link inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
-                <span class="ml-2">دسترسی به پلتفرم آکسون (Axon)</span>: جهت دریافت خدمات مشاوره مالی و دسترسی به راهکارهای سرمایه‌گذاری نوین کلیک کنید.
-            </a>
+            
 
         </section>
 
-        <!-- بخش ارزهای دیجیتال و لینک‌های صرافی -->
         <div class="section-separator"></div>
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-r-4 border-blue-500 pr-3">
-                گام دوم: تخصیص هدفمند به دارایی‌های دیجیتال (رمزارزها)
+        <section class="mb-20">
+            <h2 class="section-title mb-8">
+                گام دوم: تخصیص هدفمند به دارایی‌های دیجیتال (رمزارزها) ₿
             </h2>
-            <p class="text-gray-700 text-lg mb-6">
+            <p class="text-gray-700 text-lg mb-8">
                 با وجود ریسک‌های بالا، بازار ارزهای دیجیتال به عنوان یک کلاس دارایی جدید و با بازدهی بالقوه بالا، نباید از پورتفولیوی سرمایه‌های بزرگ حذف شود. تخصص مالی توصیه می‌کند که بخش کوچکی (معمولاً ۱٪ تا ۵٪) از سرمایه کلان به صورت هدفمند به این بازار پرنوسان اختصاص یابد.
             </p>
 
-            <h3 class="text-2xl font-semibold text-blue-700 mb-4 mt-8">
+            <h3 class="text-2xl font-bold text-blue-700 mb-5 mt-10">
                 انتخاب صرافی امن و معتبر برای سرمایه‌های کلان
             </h3>
-            <p class="text-gray-700 mb-6">
+            <p class="text-gray-700 mb-8">
                 برای مدیریت این بخش از دارایی، امنیت و حجم معاملات صرافی داخلی از اهمیت حیاتی برخوردار است. صرافی‌ها باید دارای حجم نقدینگی بالا، تیم پشتیبانی قوی، و سوابق شفاف در زمینه امنیت باشند. در اینجا مجموعه‌ای از صرافی‌های دیجیتال ایرانی با سابقه و حجم مناسب معرفی می‌شوند که می‌توانید با اطمینان از طریق لینک‌های زیر ثبت نام کنید:
             </p>
 
-            <!-- معرفی صرافی‌ها -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                <!-- Nobitex -->
-                <a href="https://nobitex.ir/signup/?refcode=2817185" target="_blank" rel="nofollow noopener" class="referral-link block p-6 bg-green-500 hover:bg-green-600 text-white rounded-xl text-center shadow-lg">
-                    <h4 class="font-extrabold text-xl mb-2">صرافی نوبیتکس (Nobitex)</h4>
-                    <p class="text-sm">یکی از قدیمی‌ترین و پرحجم‌ترین صرافی‌های ایران؛ ایده‌آل برای نقدینگی بالا و معاملات کلان.</p>
-                    <span class="mt-3 inline-block font-bold border-b border-white">ثبت نام و شروع معامله</span>
+                <a href="https://nobitex.ir/signup/?refcode=2817185" target="_blank" rel="nofollow noopener" class="referral-link block p-6 bg-green-600 hover:bg-green-700 text-white rounded-xl text-center">
+                    <h4 class="font-extrabold text-2xl mb-2">صرافی نوبیتکس</h4>
+                    <p class="text-sm font-medium opacity-90">یکی از قدیمی‌ترین و پرحجم‌ترین صرافی‌های ایران؛ ایده‌آل برای نقدینگی بالا و معاملات کلان.</p>
+                    <span class="mt-3 inline-block font-bold border-b-2 border-white/80 pb-1">ثبت نام و شروع معامله</span>
                 </a>
 
-                <!-- Wallex -->
-                <a href="https://wallex.ir/signup?ref=zc3hbde" target="_blank" rel="nofollow noopener" class="referral-link block p-6 bg-purple-500 hover:bg-purple-600 text-white rounded-xl text-center shadow-lg">
-                    <h4 class="font-extrabold text-xl mb-2">صرافی والکس (Wallex)</h4>
-                    <p class="text-sm">پلتفرمی با رابط کاربری جذاب و ابزارهای معاملاتی پیشرفته، مناسب برای تریدرهای حرفه‌ای.</p>
-                    <span class="mt-3 inline-block font-bold border-b border-white">ثبت نام در والکس</span>
+                <a href="https://wallex.ir/signup?ref=zc3hbde" target="_blank" rel="nofollow noopener" class="referral-link block p-6 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-center">
+                    <h4 class="font-extrabold text-2xl mb-2">صرافی والکس</h4>
+                    <p class="text-sm font-medium opacity-90">پلتفرمی با رابط کاربری جذاب و ابزارهای معاملاتی پیشرفته، مناسب برای تریدرهای حرفه‌ای.</p>
+                    <span class="mt-3 inline-block font-bold border-b-2 border-white/80 pb-1">ثبت نام در والکس</span>
                 </a>
 
-                <!-- Bitpin -->
-                <a href="https://bitpin.ir/signup/?refcode=z4ylqbfjht" target="_blank" rel="nofollow noopener" class="referral-link block p-6 bg-red-500 hover:bg-red-600 text-white rounded-xl text-center shadow-lg">
-                    <h4 class="font-extrabold text-xl mb-2">صرافی بیت پین (Bitpin)</h4>
-                    <p class="text-sm">معروف به سرعت در احراز هویت و پشتیبانی فعال؛ گزینه‌ای سریع برای شروع کار.</p>
-                    <span class="mt-3 inline-block font-bold border-b border-white">ثبت نام در بیت پین</span>
+                <a href="https://bitpin.ir/signup/?refcode=z4ylqbfjht" target="_blank" rel="nofollow noopener" class="referral-link block p-6 bg-red-600 hover:bg-red-700 text-white rounded-xl text-center">
+                    <h4 class="font-extrabold text-2xl mb-2">صرافی بیت پین</h4>
+                    <p class="text-sm font-medium opacity-90">معروف به سرعت در احراز هویت و پشتیبانی فعال؛ گزینه‌ای سریع برای شروع کار.</p>
+                    <span class="mt-3 inline-block font-bold border-b-2 border-white/80 pb-1">ثبت نام در بیت پین</span>
                 </a>
 
-                <!-- Tabdeal -->
-                <a href="https://tabdeal.org/?ref=2imfj5" target="_blank" rel="nofollow noopener" class="referral-link block p-6 bg-yellow-500 hover:bg-yellow-600 text-white rounded-xl text-center shadow-lg">
-                    <h4 class="font-extrabold text-xl mb-2">صرافی تبدیل (Tabdeal)</h4>
-                    <p class="text-sm">ارائه دهنده خدمات متنوع و عمق بازار مناسب، برای تنوع بخشیدن به معاملات رمزارزی.</p>
-                    <span class="mt-3 inline-block font-bold border-b border-white">ثبت نام در تبدیل</span>
+                <a href="https://tabdeal.org/?ref=2imfj5" target="_blank" rel="nofollow noopener" class="referral-link block p-6 bg-yellow-600 hover:bg-yellow-700 text-white rounded-xl text-center">
+                    <h4 class="font-extrabold text-2xl mb-2">صرافی تبدیل</h4>
+                    <p class="text-sm font-medium opacity-90">ارائه دهنده خدمات متنوع و عمق بازار مناسب، برای تنوع بخشیدن به معاملات رمزارزی.</p>
+                    <span class="mt-3 inline-block font-bold border-b-2 border-white/80 pb-1">ثبت نام در تبدیل</span>
                 </a>
             </div>
 
-            <p class="text-gray-700 text-lg mt-8">
-                <strong>توصیه مهم:</strong> هرگز کل دارایی دیجیتال خود را در صرافی‌ها نگهداری نکنید. پس از انجام معاملات، بخش عمده سرمایه را به کیف پول‌های سخت‌افزاری یا نرم‌افزاری شخصی که کلید خصوصی آن در اختیار خودتان است (Self-Custody Wallets)، منتقل کنید تا امنیت سرمایه کلان شما تضمین شود.
+            <p class="text-gray-700 text-lg mt-10 bg-gray-100 p-5 rounded-xl border border-gray-300">
+                ⚠️ <b>توصیه مهم:</b> هرگز کل دارایی دیجیتال خود را در صرافی‌ها نگهداری نکنید. پس از انجام معاملات، بخش عمده سرمایه را به کیف پول‌های سخت‌افزاری یا نرم‌افزاری شخصی که کلید خصوصی آن در اختیار خودتان است (Self-Custody Wallets)، منتقل کنید تا امنیت سرمایه کلان شما تضمین شود.
             </p>
         </section>
         
-        <!-- بخش سوم: استراتژی‌های پایداری و رشد -->
         <div class="section-separator"></div>
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-r-4 border-blue-500 pr-3">
-                گام سوم: بازبینی دوره‌ای و استراتژی خروج
+        <section class="mb-20">
+            <h2 class="section-title mb-8">
+                گام سوم: بازبینی دوره‌ای و استراتژی خروج 🔄
             </h2>
 
-            <h3 class="text-2xl font-semibold text-blue-700 mb-4 mt-8">
+            <h3 class="text-2xl font-bold text-blue-700 mb-5 mt-10">
                 سنجش عملکرد و Rebalancing (تعدیل متوازن)
             </h3>
-            <p class="text-gray-700 mb-6">
-                پورتفولیوی سرمایه‌های بزرگ باید حداقل فصلی یا سالانه مورد بازبینی قرار گیرد. در فرآیند **Rebalancing** (تعدیل متوازن)، دارایی‌هایی که رشد بیش از حدی داشته‌اند (مثلاً رمزارزها) فروخته شده و سود حاصل به سمت دارایی‌هایی که عقب مانده‌اند (مثلاً اوراق با درآمد ثابت) هدایت می‌شود. این کار باعث می‌شود سطح ریسک شما همواره در محدوده تعریف‌شده باقی بماند و از تمرکز ناخواسته سرمایه در یک بخش جلوگیری شود.
+            <p class="text-gray-700 mb-8">
+                پورتفولیوی سرمایه‌های بزرگ باید حداقل فصلی یا سالانه مورد بازبینی قرار گیرد. در فرآیند <b>Rebalancing</b> (تعدیل متوازن)، دارایی‌هایی که رشد بیش از حدی داشته‌اند (مثلاً رمزارزها) فروخته شده و سود حاصل به سمت دارایی‌هایی که عقب مانده‌اند (مثلاً اوراق با درآمد ثابت) هدایت می‌شود. این کار باعث می‌شود سطح ریسک شما همواره در محدوده تعریف‌شده باقی بماند و از تمرکز ناخواسته سرمایه در یک بخش جلوگیری شود.
             </p>
 
-            <h3 class="text-2xl font-semibold text-blue-700 mb-4 mt-8">
+            <h3 class="text-2xl font-bold text-blue-700 mb-5 mt-12">
                 برنامه‌ریزی برای میراث و انتقال ثروت
             </h3>
             <p class="text-gray-700 mb-6">
@@ -177,11 +216,10 @@
             </p>
         </section>
 
-        <!-- نتیجه‌گیری -->
-        <footer class="pt-8 mt-12 border-t-2 border-blue-300 text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">نتیجه‌گیری: استمرار و دانش رمز موفقیت</h2>
-            <p class="text-xl text-gray-700 max-w-4xl mx-auto">
-                مدیریت سرمایه‌های بزرگ یک سفر است، نه یک مقصد. موفقیت پایدار از طریق **دانش مستمر، انضباط مالی و تنوع‌بخشی هوشمندانه** به دست می‌آید. با استفاده از ابزارهای معرفی شده (پلتفرم‌های مالی، صندوق‌های سرمایه‌گذاری و صرافی‌های معتبر رمزارزی) می‌توانید کنترل کامل بر آینده مالی خود و نسل‌های بعد داشته باشید.
+        <footer class="pt-10 mt-12 border-t-4 border-blue-500 text-center bg-gray-50 rounded-b-3xl p-8">
+            <h2 class="text-3xl font-extrabold text-gray-800 mb-4">نتیجه‌گیری: استمرار و دانش رمز موفقیت</h2>
+            <p class="text-xl text-gray-700 max-w-5xl mx-auto">
+                مدیریت سرمایه‌های بزرگ یک سفر است، نه یک مقصد. موفقیت پایدار از طریق <b>دانش مستمر، انضباط مالی و تنوع‌بخشی هوشمندانه</b> به دست می‌آید. با استفاده از ابزارهای معرفی شده (پلتفرم‌های مالی، صندوق‌های سرمایه‌گذاری و صرافی‌های معتبر رمزارزی) می‌توانید کنترل کامل بر آینده مالی خود و نسل‌های بعد داشته باشید.
             </p>
         </footer>
 
